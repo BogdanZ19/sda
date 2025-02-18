@@ -66,3 +66,28 @@ void AfisNotaMinMAx(Grupa g)
     std::cout << "Nota: (min, max) = (" << min << ", " << max << ")" << std::endl;
 }
 
+void SortareGrupa(Grupa &g)
+{
+    int n = g.nr;
+    bool swapped;
+  
+    for (int i = 0; i < n - 1; i++) 
+    {
+        swapped = false;
+        for (int j = 0; j < n - i - 1; j++)
+         {
+            if (g.tab[j].nota > g.tab[j + 1].nota) 
+            {
+                Student aux;
+                aux = g.tab[j];
+                g.tab[j] = g.tab[j+1];
+                g.tab[j+1] = aux;
+
+                swapped = true;
+            }
+        }
+      
+        if (!swapped)
+            break;
+    }
+}

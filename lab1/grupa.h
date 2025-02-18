@@ -15,5 +15,6 @@ void AfisGrupa(Grupa);
 void StergeGrupa(Grupa&);
 void CautaDupaNume(Grupa, char*);
 void AfisNotaMinMAx(Grupa);
+void SortareGrupa(Grupa&);
 
 #endif

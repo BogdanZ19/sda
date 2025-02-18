@@ -3,7 +3,7 @@
 
 int main()
 {
-    char nume[] = "bogdan";
+    char nume[] = "Zainia Bogdan";
     Grupa g;
 
     InitGrupa(g); 
@@ -16,6 +16,11 @@ int main()
     std::cout << std::endl;
 
     AfisNotaMinMAx(g);
+    std::cout << std::endl;
+    
+    SortareGrupa(g);
+
+    AfisGrupa(g);
     
     StergeGrupa(g); 
 
