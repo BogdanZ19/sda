@@ -8,7 +8,7 @@ void InitStudent(Student &s)
     char ws;
 
     std::cout << "nume = ";
-    std::cin >> ws;
+    std::cin.get(ws);
     std::cin.getline(aux, 100);
 
     s.nume = new char[strlen(aux) + 1];

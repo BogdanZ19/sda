@@ -65,3 +65,4 @@ void AfisNotaMinMAx(Grupa g)
 
     std::cout << "Nota: (min, max) = (" << min << ", " << max << ")" << std::endl;
 }
+
