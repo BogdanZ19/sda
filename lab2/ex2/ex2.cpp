@@ -16,7 +16,6 @@ int main()
 
     sumaPeSectiune(x, nr, 4);
 
-
     return 0;
 }
 
