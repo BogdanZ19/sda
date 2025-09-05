@@ -73,6 +73,7 @@ void bfsRecursiv(int **graf, int n, vector<int> &L, int *M, queue<int> q)
         q.pop();
         L.push_back(i);
         M[i] = 1;
+
         for (int j = 0; j <= n; j++)
         {
             if (graf[i][j] != 0 && M[j] == 0)
@@ -84,7 +85,31 @@ void bfsRecursiv(int **graf, int n, vector<int> &L, int *M, queue<int> q)
         bfsRecursiv(graf, n, L, M, q);
     }
 }
-
-
 // 1 2 1 3 2 4 2 5 3 5 4 1 4 7 5 4 5 6 5 7 6 7 7 5 -1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
